@@ -1,0 +1,20 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "[python]": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "ruff.args": [
+        "--ignore",
+        "F403",
+        "E722"
+    ],
+    "flake8.args": [
+        "--ignore=E501"
+    ]
+}

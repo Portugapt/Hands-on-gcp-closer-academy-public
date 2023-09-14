@@ -1,0 +1,73 @@
+site_name: Hands-On GCP | Closer Academy
+repo_name: Closer Academy Google Cloud Platform
+repo_url: https://github.com/Portugapt/Hands-on-gcp-closer-academy-public
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.tabs
+
+watch:
+  - functions/
+
+docs_dir: docs/content
+nav:
+  - Overview:
+      - index: index.md
+      - Services/Resources:
+          - index: services/index.md
+          - Cloud Storage: services/cloud_storage.md
+          - BigQuery: services/bigquery.md
+          - Functions/Serverless: services/serverless_computing.md
+          - Message Queue/PubSub: services/message_queue.md
+  - Create Resources: create_resources.md
+  - Programming Guidebook: client_libs_py.md
+  - Exercises:
+      - Simple MLOps Pipelines:
+          - index: exercises/simple_mlops/index.md
+          - Architecture: exercises/simple_mlops/architecture.md
+          - Dataset: exercises/simple_mlops/dataset.md
+          - Step 1: exercises/simple_mlops/step1.md
+          - Step 2: exercises/simple_mlops/step2.md
+          - Step 3: exercises/simple_mlops/step3.md
+          - Step 4: exercises/simple_mlops/step4.md
+          - (Extra) Step 5: exercises/simple_mlops/step5.md
+
+markdown_extensions:
+  - footnotes
+  - toc:
+      permalink: True
+  - admonition
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [functions/]
+          options:
+            heading_level: 3
+            show_root_full_path: false
+            show_root_heading: true
+  - search

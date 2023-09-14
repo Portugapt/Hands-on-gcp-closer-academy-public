@@ -1,0 +1,74 @@
+[
+    {
+        "name": "PassengerId",
+        "type": "INTEGER",
+        "mode": "REQUIRED",
+        "description": "Unique identifier for each passenger"
+    },
+    {
+        "name": "Survived",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE",
+        "description": "Indicates if the passenger survived (1) or not (0)"
+    },
+    {
+        "name": "Pclass",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)"
+    },
+    {
+        "name": "Name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Passenger's full name"
+    },
+    {
+        "name": "Sex",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Passenger's sex (male or female)"
+    },
+    {
+        "name": "Age",
+        "type": "FLOAT",
+        "mode": "NULLABLE",
+        "description": "Passenger's age in years"
+    },
+    {
+        "name": "SibSp",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Number of siblings/spouses aboard"
+    },
+    {
+        "name": "Parch",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Number of parents/children aboard"
+    },
+    {
+        "name": "Ticket",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Ticket number"
+    },
+    {
+        "name": "Fare",
+        "type": "FLOAT",
+        "mode": "NULLABLE",
+        "description": "Passenger fare"
+    },
+    {
+        "name": "Cabin",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Cabin number"
+    },
+    {
+        "name": "Embarked",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)"
+    }
+]

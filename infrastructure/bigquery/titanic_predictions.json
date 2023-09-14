@@ -1,0 +1,68 @@
+[
+    {
+        "name": "uuid",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "Unique identifier for the prediction"
+    },
+    {
+        "name": "model_prediction",
+        "type": "FLOAT",
+        "mode": "REQUIRED",
+        "description": "Model prediction"
+    },
+    {
+        "name": "model_id",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "Model Identifier"
+    },
+    {
+        "name": "model_version",
+        "type": "STRING",
+        "mode": "REQUIRED",
+        "description": "Model Version"
+    },
+    {
+        "name": "Age",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Age of the passenger"
+    },
+    {
+        "name": "SibSp",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Number of siblings/spouses aboard"
+    },
+    {
+        "name": "Parch",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": "Number of parents/children aboard"
+    },
+    {
+        "name": "Fare",
+        "type": "FLOAT",
+        "mode": "NULLABLE",
+        "description": "Passenger fare"
+    },
+    {
+        "name": "Sex",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Sex of the passenger"
+    },
+    {
+        "name": "Embarked",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Port of embarkation"
+    },
+    {
+        "name": "Pclass",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Ticket class"
+    }
+]

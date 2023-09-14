@@ -1,0 +1,43 @@
+{
+    "name": "Python 3",
+    "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+    "features": {
+        "ghcr.io/dhoeric/features/google-cloud-cli:1": {
+            "version": "445.0.0"
+        },
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers-contrib/features/poetry:2": {
+            "version": "1.6.1"
+        },
+        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {
+            "version": "3.4.0"
+        },
+        "ghcr.io/devcontainers-contrib/features/pulumi:1": {
+            "version": "3.81.0"
+        },
+        "ghcr.io/jungaretti/features/make:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "charliermarsh.ruff",
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "njpwerner.autodocstring",
+                "KevinRose.vsc-python-indent",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "VisualStudioExptTeam.intellicode-api-usage-examples",
+                "GitHub.vscode-pull-request-github",
+                "me-dutour-mathieu.vscode-github-actions",
+                "GitHub.vscode-github-actions",
+                "donjayamanne.githistory",
+                "GitHub.copilot-chat"
+            ]
+        }
+    },
+    "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && sh .devcontainer/post-create.sh"
+}
