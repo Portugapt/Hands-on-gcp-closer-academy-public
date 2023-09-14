@@ -408,10 +408,4 @@ Read more on how to deploy a function that listens to a Cloud Storage bucket eve
 
 ## Documentation
 
-::: simple_mlops.a_ingest_data.app.main
-
-::: simple_mlops.a_ingest_data.app.funcs.gcp_apis
-
-::: simple_mlops.a_ingest_data.app.funcs.transform
-
-::: simple_mlops.a_ingest_data.app.funcs.models
+Does not work without the code correct.

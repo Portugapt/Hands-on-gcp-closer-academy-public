@@ -2,7 +2,7 @@
 
 This repository contains the code for the Hands On GCP workshop.
 
-For the documententation refer to the [github page](https://portugapt.github.io/Hands-on-gcp-closer-academy/).
+For the documententation refer to the [github page](https://portugapt.github.io/Hands-on-gcp-closer-academy-public/).
 
 ## Requirements
 
